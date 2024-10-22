@@ -1,0 +1,5 @@
+name: NoDrowningDamage
+version: '1.0.0'
+main: winlyps.noDrowningDamage.NoDrowningDamage
+api-version: '1.20'
+authors: [ Winlyps ]
