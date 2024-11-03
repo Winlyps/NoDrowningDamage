@@ -14,6 +14,9 @@ class NoDrowningDamage : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("NoDrowningDamage plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("drowningDamage", "true")
+            logger.info("NoDrowningDamage plugin has been disabled.")
+        }
     }
 }
